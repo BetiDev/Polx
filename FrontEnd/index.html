@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polx</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="name">
+      <form id="name-form">
+        <p>Please enter your username:</p>
+      <input type="text" id="username" required>
+      <input type="submit">
+      </form>
+    </div>
+    <div id="kickContainer" hidden>
+      <b>You were kicked by an admin</b>
+    </div>
+    <div id="app" hidden>
+    <div id="message-container">
+    </div>
+    <div id="input-container">
+      <form id="form">
+        <input type="text" id="input" autocomplete="off">
+        <br>
+        <!-- <button id="upload">+</button><br> -->
+        <p id="typing"></p>
+        <!-- For debug use -->
+        <p id="test" hidden></p>
+      </form>
+    </div>
+    <div>
+      <select id="status" onclick="setStatus()">
+      <option value="online">Online</option>
+       <option value="dnd">Do not disturb</option>
+        <option value="offline">Offline</option>
+      </select>
+    </div>
+    <div id="emoji-modal" hidden>
+      <b>hi</b>
+    </div>
+        <script src="https://Polx-socket.pdaniely.repl.co/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+    </div>
+  </body>
+</html>

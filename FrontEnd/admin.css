@@ -1,0 +1,11 @@
+body{
+  background-color: gray;
+  text-align: center;
+}
+#input{
+  position: fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  overflow: auto;
+}
